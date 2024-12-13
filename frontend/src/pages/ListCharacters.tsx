@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import '../App.css'
 import { CharacterCard } from './CharacterCard';
 
 export interface Data{
@@ -41,8 +41,8 @@ export default function ListCharacters() {
 
   return (
     <>
-      <div>
       <h1>Personajes</h1>
+      <div>
         {data.map((item, i) => (
           <CharacterCard key={item.id + i}
           id={item.id}
